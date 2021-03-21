@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/view_yuan_morelist"
+    android:id="@+id/root"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll1"
+        >
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/item_icon"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="2dp"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="2"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/task_title"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb"
+        android:max="1000"
+        android:progressDrawable="@drawable/progressbar"
+        android:visibility="visible"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:indeterminate="false"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll2"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            android:paddingRight="0dp"
+            android:textColor="#000000"
+            android:id="@+id/done"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            android:paddingRight="16dp"
+            android:textColor="#000000"
+            android:id="@+id/total"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            android:paddingRight="10dp"
+            android:textSize="8pt"
+            android:textColor="#000000"
+            android:id="@+id/result"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+

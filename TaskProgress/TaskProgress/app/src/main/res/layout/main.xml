@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:id="@+id/add"
+        android:background="@drawable/mybutton"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        />
+
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/show"
+        android:dividerHeight="5dp"
+        android:divider="#fff7f6ff"
+        android:listSelector="@drawable/bg_item"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="请点击按钮添加任务"
+        android:textSize="12pt"
+        android:id="@+id/empty_text"
+        />
+
+</LinearLayout>
